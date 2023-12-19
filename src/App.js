@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <a
+              href="standard.html"
+              class="stand text-start"
+              title="standard measurement"
+            >
+              STANDARD
+            </a>
+          </div>
+          <div className="col-md-6">
+            <a
+              href="metric.html"
+              class="metric text-center"
+              title="metric measurements"
+            >
+              METRIC
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
