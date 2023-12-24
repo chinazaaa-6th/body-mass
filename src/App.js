@@ -1,27 +1,18 @@
 import "./App.css";
+import Standard from "./Standard";
+import Metric from "./Metric";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
+        <h1 class="text-center">BMI Calculator</h1>
         <div className="row">
-          <div className="col-md-6">
-            <a
-              href="standard.html"
-              class="stand text-start"
-              title="standard measurement"
-            >
-              STANDARD
-            </a>
+          <div className="col">
+            <Standard />
           </div>
-          <div className="col-md-6">
-            <a
-              href="metric.html"
-              class="metric text-center"
-              title="metric measurements"
-            >
-              METRIC
-            </a>
+          <div className="col">
+            <Metric />
           </div>
         </div>
       </div>
